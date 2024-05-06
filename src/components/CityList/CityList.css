@@ -1,0 +1,50 @@
+.citys {
+  margin-bottom: 40px;
+}
+
+.city-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  .item {
+    position: relative;
+    border-radius: 15px;
+    height: 270px;
+  }
+
+  img {
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .text {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  h2,
+  p {
+    color: white;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+/* Reponsive Tablet */
+@media screen and (max-width: 1090px) {
+  .city-list {
+    grid-template-columns: 1fr;
+  }
+}

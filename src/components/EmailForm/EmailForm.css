@@ -1,0 +1,56 @@
+.email-form {
+  background-color: var(--color-primary);
+  padding: 60px 0 48px 0;
+  color: white;
+  text-align: center;
+
+  .email-control {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input {
+      border-radius: 5px;
+      padding: 15px 8px;
+      border: none;
+      width: 330px;
+      margin-right: 10px;
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      padding: 15px 8px;
+      cursor: pointer;
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+/* Reponsive Tablet */
+@media screen and (max-width: 1090px) {
+  .email-form {
+    .email-control {
+      form {
+        /* background-color: red; */
+      }
+      input,
+      button {
+        width: 80%;
+        margin: auto;
+        display: block;
+      }
+
+      input {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

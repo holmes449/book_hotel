@@ -1,0 +1,24 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: var(--color-primary);
+  font-size: 14px;
+
+  .footer-control {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; */
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      /* display: inline-block; */
+      gap: 12px;
+    }
+  }
+}

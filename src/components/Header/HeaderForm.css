@@ -1,0 +1,82 @@
+/* Header Form */
+.header-form {
+  position: relative;
+  height: 100px;
+}
+
+.header-form form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border: 5px solid rgb(255, 187, 62);
+  border-radius: 10px;
+  background-color: white;
+  padding: 6px 0;
+
+  color: black;
+}
+
+.header-form .form-control {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(200, 200, 200);
+
+  .input-date {
+    position: relative;
+  }
+
+  .input-date-box {
+    position: absolute;
+    top: 50px;
+
+    max-height: 500px;
+    overflow: scroll;
+    z-index: 1;
+  }
+}
+
+.header-form .form-control input {
+  border: none;
+  outline: none;
+  width: 160px;
+}
+
+.header-form .form-control i {
+  font-size: 16px;
+}
+
+.header-form .form-control .icon--small {
+  font-size: 3px;
+  margin: 0;
+}
+
+/* Reponsive Tablet */
+@media screen and (max-width: 1090px) {
+  .header-form {
+    height: 180px;
+  }
+
+  .header-form form {
+    bottom: -100px;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 10px 30px;
+  }
+
+  .header-form .form-control {
+    width: 100%;
+  }
+
+  .header-form .form-control button {
+    width: 100%;
+  }
+}

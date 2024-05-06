@@ -1,0 +1,63 @@
+/* Variable all Css */
+:root {
+  --width-page: 1100px;
+  --width-table: 990px;
+  --color-primary: #003580;
+  --color-blue: #007dd6;
+  --color-blue-white: #ebf3ff;
+  --color-title: rgb(73, 83, 98);
+  --color-orange: #f9bb12;
+  --color-green: #00a800;
+}
+
+/* Width Page */
+.page-wide {
+  max-width: var(--width-page);
+  margin: auto;
+}
+
+/* Button */
+.button-normal {
+  border: none;
+  padding: 10px 20px;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+/* Button color white */
+.button--white {
+  background-color: white;
+
+  color: var(--color-primary);
+}
+
+/* Button color blue */
+.button--blue {
+  background-color: var(--color-blue);
+
+  color: white;
+}
+
+/* Button radius */
+.button--ra-5 {
+  border-radius: 5px;
+}
+
+.button--ra-10 {
+  border-radius: 10px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1090px) {
+  .page-wide {
+    max-width: 100%;
+    padding: 16px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}

@@ -1,0 +1,23 @@
+/* Header */
+.header {
+  margin-top: -10px;
+  margin-bottom: 60px;
+  background-color: var(--color-primary);
+
+  color: white;
+}
+
+.header h1 {
+  margin-bottom: 20px;
+}
+
+.header .title {
+  margin-bottom: 20px;
+}
+
+/* Reponsive Tablet */
+@media screen and (max-width: 1090px) {
+  .header {
+    margin-bottom: 100px;
+  }
+}

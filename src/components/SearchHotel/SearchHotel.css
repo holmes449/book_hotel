@@ -1,0 +1,147 @@
+.search-hotel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    gap: 12px;
+    padding: 12px;
+    height: 300px;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      font-size: 15px;
+
+      h2 {
+        color: var(--color-blue);
+      }
+
+      span {
+        align-self: self-start;
+        padding: 5px 8px;
+        border-radius: 10px;
+        background-color: var(--color-green);
+        color: white;
+      }
+
+      .free_cancel {
+        color: var(--color-green);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    .category {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .rate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-size: 18px;
+        }
+
+        .box {
+          padding: 5px;
+          background-color: var(--color-primary);
+          color: white;
+        }
+      }
+
+      .see-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+
+        .price {
+          font-size: 26px;
+          font-weight: 600;
+        }
+
+        a {
+          display: block;
+          text-align: center;
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* Reponsive Tablet */
+@media screen and (max-width: 1090px) {
+  .search-hotel {
+    .item {
+      grid-template-columns: 1fr 0.5fr;
+      grid-template-rows: 300px;
+
+      height: auto;
+
+      .image {
+        width: 100%;
+        height: 300px;
+        grid-column: 1 / span 2;
+      }
+
+      .category {
+        gap: 20px;
+
+        .see-detail {
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* Reponsive Mobile */
+@media screen and (max-width: 768px) {
+  .search-hotel {
+    .item {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      gap: 20px;
+
+      height: auto;
+
+      .image {
+        width: 100%;
+        height: 300px;
+        grid-column: 1;
+      }
+
+      .category {
+        gap: 20px;
+
+        .see-detail {
+          align-items: center;
+          gap: 20px;
+          .price {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
